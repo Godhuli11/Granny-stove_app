@@ -148,4 +148,7 @@ class LocationController extends GetxController implements GetxService{
        String userAddress = jsonEncode(addressModel.toJson());
        return await locationRepo.saveUserAddress(userAddress);
     }
+        String getUserAddressFromLocalStorage(){
+          return locationRepo.getUserAddress();
+        }
 }
