@@ -7,6 +7,8 @@ import 'package:main_food_ingrdients_app/controllers/auth_controller.dart';
 import 'package:main_food_ingrdients_app/controllers/location_controller.dart';
 import 'package:main_food_ingrdients_app/controllers/user_controller.dart';
 import 'package:main_food_ingrdients_app/models/adress_model.dart';
+import 'package:main_food_ingrdients_app/pages/address/pick_address_map.dart';
+import 'package:main_food_ingrdients_app/routes/route_helper.dart';
 import 'package:main_food_ingrdients_app/utils/dimensions.dart';
 import 'package:main_food_ingrdients_app/widgets/app_text_field.dart';
 import 'package:main_food_ingrdients_app/widgets/big_text.dart';
@@ -96,7 +98,10 @@ class _AddAdressPageState extends State<AddAdressPage> {
                     children: [
                       GoogleMap(initialCameraPosition:
                       CameraPosition(target: _initialPosition,zoom: 17),
-                        zoomControlsEnabled: false,
+                        onTap: (latlng){
+                          Get.toNamed(RouteHelper.getPickAddressPage(),arguments:
+                          PickAddressMap(fromSignUp: false, fromAddress: true,googleMapController: locationController.mapController,));
+                        },
                         compassEnabled: false,
                         myLocationEnabled: true,
                         indoorViewEnabled: true,
