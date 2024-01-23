@@ -83,7 +83,8 @@ class _PickAddressMapState extends State<PickAddressMap> {
                                  ) ,
                                  maxLines: 1,
                                  overflow: TextOverflow.ellipsis,
-                               ))
+                               )),
+                                SizedBox(width: Dimensions.width10,)
                              ],
                            ),
                          )),
