@@ -37,9 +37,10 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
           //home: SplashScreen(),
-          home:PickAddressMap(fromSignUp: true, fromAddress: true,),
-         //initialRoute: RouteHelper.getSplashPage(),
-        // getPages: RouteHelper.routes,
+          //home:PickAddressMap(fromSignUp: true, fromAddress: true,),
+
+         //{initialRoute: RouteHelper.getSplashPage(),
+        // getPages: RouteHelper.routes,}
          theme: ThemeData(
            primaryColor: AppColors.mainColor,
            fontFamily: 'Lato',

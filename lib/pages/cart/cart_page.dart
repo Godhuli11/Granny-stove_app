@@ -17,6 +17,7 @@ import 'package:get/get.dart';
 import '../../controllers/cart_controller.dart';
 import '../../controllers/popular_product_controllers.dart';
 import '../../controllers/recommended_product_controler.dart';
+import '../../controllers/user_controller.dart';
 
 
 class CartPage extends StatelessWidget {
@@ -195,6 +196,8 @@ class CartPage extends StatelessWidget {
                 if(Get.find<AuthController>().userLoggedIn()){
                   if(Get.find<LocationController>().addressList.isEmpty){
                     Get.toNamed(RouteHelper.getAddressPage());
+                  }else{
+                    Get.toNamed(RouteHelper.getPaymentPage("27",Get.find<UserController>().userModel!.id!));
                   }
 
                 }else{
