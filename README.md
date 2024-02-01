@@ -1,6 +1,6 @@
-# main_food_ingrdients_app
+# Granny's Stove
 
-A new Flutter project.
+An open-source flutter app with customised food selections built using dart and laravel.
 
 ## Getting Started
 
@@ -14,3 +14,5 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+## Screenshots
