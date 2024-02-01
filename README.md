@@ -23,5 +23,17 @@ samples, guidance on mobile development, and a full API reference.
 ![Screenshot 2024-01-21 201849](https://github.com/Godhuli11/Granny-stove_app/assets/85281252/6517bd8d-b867-46fa-8755-fe66960529fe)
 ![Screenshot 2024-01-23 140914](https://github.com/Godhuli11/Granny-stove_app/assets/85281252/b79eaba2-bad1-424c-b3e6-7aae86edb16d)
 
+## Features 
+•	Fast loading time 
+•	Animated PageView
+•	Responsive layout
+•	Zone based user location and user using Google Maps Api
+•	Efficient state management using GetX Package
+•	Integration with Laravel backend 
+•	Firebase integration for user notifications management
+•	PayPal payment set-up
+•	Phone number verification using Twilio
+
+
 
 
